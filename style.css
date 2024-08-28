@@ -94,7 +94,6 @@ main {
 
 .backgroundBlack {
     background: #FED500;
-    margin: 3rem;
     overflow: hidden;
 }
 
@@ -456,4 +455,38 @@ ul {
     color: #A7288E;
     border-bottom: 1px solid #212121;
     padding-bottom: 1rem;
+}
+
+.containerGeralIndicado {
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+}
+
+.divUm {
+    background: linear-gradient(163.45deg, rgb(0, 232, 143) 59.63%, rgb(135, 141, 253) 105.99%);
+    padding: 2rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    flex: 1; 
+    display: flex;
+    flex-direction: column; 
+    transition: filter 0.3s ease;
+}
+
+.divUm:hover {
+    filter: brightness(1.1) saturate(1.2); 
+}
+
+.divUm h2 {
+    font-weight: 800;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+
+.divUm p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 2rem; 
+    color: #302537;
 }
