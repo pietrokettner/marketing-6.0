@@ -526,3 +526,26 @@ form {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.divButton2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.buttonInscricao {
+    background: #FED500;
+    color: #252526;
+    padding: 1.1rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #212121;
+    transition: 0.3s ease-in-out;
+}
+
+.buttonInscricao:hover {
+    background: #FBFF00;
+    color: #A7288E;
+    text-decoration: none;
+}
