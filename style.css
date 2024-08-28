@@ -206,30 +206,8 @@ ul li {
     z-index: 3;
 }
 
-.backgroundSalarioJunior::before {
-    content: '';
-    position: absolute;
-    background: #C335B8;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 25%;
-    border-radius: 10px;
-    z-index: 1;
-}
-
-.backgroundSalarioPleno::before {
-    content: '';
-    position: absolute;
-    background: #C335B8;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 55%;
-    border-radius: 10px;
-    z-index: 1;
-}
-
+.backgroundSalarioJunior::before, 
+.backgroundSalarioPleno::before, 
 .backgroundSalarioSenior::before {
     content: '';
     position: absolute;
@@ -237,8 +215,157 @@ ul li {
     left: 0;
     top: 0;
     height: 100%;
-    width: 85%;
     border-radius: 10px;
     z-index: 1;
+    clip-path: polygon(0 0, 100% 0%, 100% 50%, 100% 100%, 0 100%);
+    transition: clip-path 0.3s ease-in-out;
 }
 
+.backgroundSalarioJunior::before {
+    width: 25%;
+}
+
+.backgroundSalarioPleno::before {
+    width: 55%;
+}
+
+.backgroundSalarioSenior::before {
+    width: 85%;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #C335B8;
+    }
+    20% {
+        background-color: #D8508F;
+    }
+    40% {
+        background-color: #E36A66;
+    }
+    60% {
+        background-color: #A7288E;
+    }
+    80% {
+        background-color: #8B1F6A;
+    }
+    100% {
+        background-color: #C335B8;
+    }
+}
+
+@keyframes wave {
+    0%, 100% {
+        clip-path: polygon(0% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    }
+    25% {
+        clip-path: polygon(0 0, 85% 0, 85% 15%, 100% 100%, 0 100%);
+    }
+    50% {
+        clip-path: polygon(0 0, 90% 0, 99% 40%, 100% 100%, 0 100%);
+    }
+    75% {
+        clip-path: polygon(0 0, 100% 0, 90% 50%, 95% 100%, 0 100%);
+    }
+}
+
+.backgroundSalarioJunior:hover::before,
+.backgroundSalarioPleno:hover::before,
+.backgroundSalarioSenior:hover::before {
+    animation: wave 1.5s infinite linear, colorChange 1s infinite linear;
+}
+
+.backgroundBanner {
+    background: url(/images/DMWFLondon_Website800_2023.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.graduacaoParagrafo, .graduacaoTitulo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: whitesmoke;
+    margin-top: 1rem;
+}
+
+.graduacaoTitulo {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.graduacaoTitulo span {
+    color: #00FF9D;
+}
+
+.divPromo {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 2rem;
+    padding-left: 3rem;
+    margin-left: 10rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.graduacaoSubtitulo {
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+}
+
+.graduacaoTexto {
+    font-weight: 700;
+}
+
+.graduacaoTexto span {
+    font-weight: 800;
+    color: whitesmoke;
+}
+
+ul {
+    border-bottom: 1px solid #212121;
+    padding-bottom: 1rem;
+}
+
+.divValor {
+    display: flex;
+    align-items: end;
+}
+
+.divValor p {
+    text-wrap: wrap;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+
+.divValor strong {
+    font-size: 2.8rem;
+    text-wrap: nowrap;
+    font-weight: 800;
+}
+
+
+.divButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; 
+}
+
+.divButton a {
+    background: #FED500;
+    color: #252526;
+    padding: 1.1rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: 0.5s ease-in-out;
+}
+
+.divButton a:hover {
+    text-decoration: none;
+    background: brown;
+    color: whitesmoke;
+}
