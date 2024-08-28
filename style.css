@@ -95,19 +95,31 @@ main {
 .backgroundBlack {
     background: #FED500;
     margin: 3rem;
+    overflow: hidden;
 }
 
 .divGeral {
     display: flex;
     gap: 5rem;
     padding: 3rem;
+    animation: scrollText 15s linear infinite;
 }
 
 .vantagens {
     font-weight: 500;
     color: #212121;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-family: "New Amsterdam", sans-serif;
+    white-space: nowrap; /* Garante que o texto não quebre para a próxima linha */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .containerGeral {
@@ -140,8 +152,6 @@ main {
 }
 
 .containercarreira {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
     background: #FFE0E0;
@@ -326,6 +336,10 @@ ul li {
     margin-bottom: 3rem;
 }
 
+.divTextos {
+    margin-top: 3rem;
+}
+
 .graduacaoSubtitulo {
     font-weight: 800;
     font-size: 1.7rem;
@@ -386,4 +400,60 @@ ul {
     text-decoration: none;
     background: brown;
     color: whitesmoke;
+}
+
+.obs {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.backgroundWhite {
+    background: whitesmoke;
+}
+
+.jornadaTitulo {
+    font-weight: 700;
+    color: #252526;
+    font-size: 3rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.jornadaTitulo span {
+    color: #FF7073;
+}
+
+.jornadaContainer {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 3rem;
+}
+
+.jornadaDiv {
+    background: #FFF7F7;
+    padding: 2rem;
+    border-radius: 20px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 0rem;
+}
+
+.jornadaP {
+    font-weight: 700;
+    font-size: 2rem;
+    color: #212121;
+}
+
+.jornadaDiv ul {
+    border-bottom: none;
+}
+
+.jornadaDiv ul li {
+    font-size: 1.4rem;
+    color: #A7288E;
+    border-bottom: 1px solid #212121;
+    padding-bottom: 1rem;
 }
