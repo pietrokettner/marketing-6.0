@@ -490,3 +490,39 @@ ul {
     margin-top: 2rem; 
     color: #302537;
 }
+
+.backgroundYellow {
+    background: #FBFF00;
+}
+
+.tituloFormulario {
+    font-size: 6rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: "New Amsterdam", sans-serif;
+    letter-spacing: 10px;
+    text-shadow: 15px 11px 18px rgba(0, 0, 0, 0.2);
+}
+
+.divFormulario {
+    background: #01296E;
+    padding: 2rem;
+    border-radius: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.divFormulario h3 {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
