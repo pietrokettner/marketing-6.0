@@ -92,6 +92,24 @@ main {
     margin-bottom: 3rem;
 }
 
+.backgroundBlack {
+    background: #FED500;
+    margin: 3rem;
+}
+
+.divGeral {
+    display: flex;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+.vantagens {
+    font-weight: 500;
+    color: #212121;
+    font-size: 3rem;
+    font-family: "New Amsterdam", sans-serif;
+}
+
 .containerGeral {
     background: #212121;
     border-radius: 20px;
