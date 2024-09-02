@@ -60,7 +60,27 @@
                     <h3 class="vantagens">Feedback individual dos tutores e mentores</h3>
                 </div>
             </div>
-        </section>
+        </section>        
+
+        <script>
+           window.onload = function() {
+            const divGeral = document.querySelector('.divGeral');
+            let scrollAmount = 0;
+
+            function scrollText() {
+                scrollAmount -= 2;
+
+                if (Math.abs(scrollAmount) >= divGeral.scrollWidth / 2) {
+                    scrollAmount = 0;
+                }
+
+                divGeral.style.transform = `translateX(${scrollAmount}px)`;
+                requestAnimationFrame(scrollText);
+            }
+
+            scrollText();
+        };
+        </script>
         
 
         <section data-aos="fade-in" data-aos-once="true" data-aos-delay="100" class="container containerGeral">

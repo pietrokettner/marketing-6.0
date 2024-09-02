@@ -109,15 +109,15 @@ main {
     color: #212121;
     font-size: 3.5rem;
     font-family: "New Amsterdam", sans-serif;
-    white-space: nowrap; /* Garante que o texto não quebre para a próxima linha */
+    white-space: nowrap; 
 }
 
 @keyframes scrollText {
     0% {
-        transform: translateX(0%);
+        transform: translateX(5%);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-100%);
     }
 }
 
