@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketing 6.0</title>
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 divCarrossel">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
                             <img class="d-block w-100" src="/images/61465900_l.jpg" alt="First slide">
@@ -262,10 +262,12 @@
         <section data-aos="fade-in" data-aos-once="true" data-aos-delay="100" class="backgroundBlue">
             <div class="container">
                 <div class="row">
-                    <h2 class="tituloImagens"><span>Um processo efetivo</span> e online de aprendizado</h2>
+                    <div class="divTituloImagens">
+                        <h2 class="tituloImagens"><span>Um processo efetivo</span> e online de aprendizado</h2>
+                    </div>
                     <div class="divImageConteudo">
                         <div class="col-md-6">
-                            <img class="img-fluid imgImages" src="/images/depositphotos_288020148-stock-photo-close-up-side-profile-photo.jpg" alt="">
+                            <img width="645px" class="img-fluid imgImages" src="/images/depositphotos_288020148-stock-photo-close-up-side-profile-photo.jpg" alt="">
                         </div>
                         <div class="col-md-6">
                             <h4 class="tituloImagensConteudo">80% do curso são tarefas práticas</h4>    
@@ -274,7 +276,7 @@
                     </div>
                     <div class="divImageConteudo">
                         <div class="col-md-6">
-                            <img class="img-fluid imgImages" src="/images/aula-zoom.jpg" alt="">
+                            <img width="645px" class="img-fluid imgImages" src="/images/aula-zoom.jpg" alt="">
                         </div>
                         <div class="col-md-6">
                             <h4 class="tituloImagensConteudo">Aulas ao vivo</h4>    
@@ -283,7 +285,7 @@
                     </div>
                     <div class="divImageConteudo">
                         <div class="col-md-6">
-                            <img class="img-fluid imgImages" src="/images/aluno_professor_live_aula-1024x683.webp" alt="">
+                            <img width="645px" class="img-fluid imgImages" src="/images/aluno_professor_live_aula-1024x683.webp" alt="">
                         </div>
                         <div class="col-md-6">
                             <h4 class="tituloImagensConteudo">Online</h4>    
@@ -292,7 +294,7 @@
                     </div>
                     <div class="divImageConteudo">
                         <div class="col-md-6">
-                            <img class="img-fluid imgImages" src="/images/recredenciamento_mec_cruzeiro_do_sul_950X351_noticia_2.jpg" alt="">
+                            <img width="645px" class="img-fluid imgImages" src="/images/recredenciamento_mec_cruzeiro_do_sul_950X351_noticia_2.jpg" alt="">
                         </div>
                         <div class="col-md-6">
                             <h4 class="tituloImagensConteudo">Conceito 5 no MEC</h4>    
@@ -301,7 +303,7 @@
                     </div>
                     <div class="divImageConteudo">
                         <div class="col-md-6">
-                            <img class="img-fluid imgImages" src="/images/Capacitação-de-professores-camino-1024x576.jpg" alt="">
+                            <img width="645px" class="img-fluid imgImages" src="/images/Capacitação-de-professores-camino-1024x576.jpg" alt="">
                         </div>
                         <div class="col-md-6">
                             <h4 class="tituloImagensConteudo">Professores capacitados</h4>    
@@ -374,7 +376,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button class="buttonModal">Leia a história</button>
+                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
+                                    data-title="Paula Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                    Leia a história
+                                </button>
                             </div>
                             <div class="imgDepoimento">
                                 <img width="200px" height="380px" src="/images/pikaso_texttoimage_Candid-image-photography-natural-textures-highly-r.jpeg" alt="">
@@ -387,7 +393,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button class="buttonModal">Leia a história</button>
+                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
+                                    data-title="Paula Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                    Leia a história
+                                </button>
                             </div>
                             <div class="imgDepoimento">
                                 <img width="200px" height="380px" src="/images/pikaso_texttoimage_Textured-handdrawn-look-visible-soft-pencil-stroke (1).jpeg" alt="">
@@ -400,7 +410,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button class="buttonModal">Leia a história</button>
+                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
+                                    data-title="Paula Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                    Leia a história
+                                </button>
                             </div>
                             <div class="imgDepoimento">
                                 <img width="200px" height="380px" src="/images/pikaso_texttoimage_Textured-handdrawn-look-visible-soft-pencil-stroke (2).jpeg" alt="">
@@ -413,7 +427,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button class="buttonModal">Leia a história</button>
+                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
+                                    data-title="Paula Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                    Leia a história
+                                </button>
                             </div>
                             <div class="imgDepoimento">
                                 <img width="200px" height="380px" src="/images/pikaso_texttoimage_Textured-handdrawn-look-visible-soft-pencil-stroke.jpeg" alt="">
@@ -423,14 +441,50 @@
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Título do Depoimento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body" id="modalBody">
+                    Conteúdo do depoimento vai aqui.
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.buttonModal');
+                var modalTitle = document.getElementById('modalTitle');
+                var modalBody = document.getElementById('modalBody');
+        
+                buttons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        var title = button.getAttribute('data-title');
+                        var content = button.getAttribute('data-content');
+        
+                        modalTitle.textContent = title;
+                        modalBody.textContent = content;
+                    });
+                });
+            });
+        </script>
     </main>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.11.1/dist/umd/popper.min.js" integrity="sha384-f8v5dAoLNkI5VbZ1cZy6yDF7v74xL7H4vyL9IQBvK2c7xVD1VVpM5Dq3k2XtWgmZ" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jytQK9Apd7tnk6DzQb1Xk4A4ilNxj5WfF4oEXKEf06Oq4T5d0" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>

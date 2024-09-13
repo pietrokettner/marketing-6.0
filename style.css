@@ -79,6 +79,7 @@ header h3 {
     color: #463877;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-decoration: none;
 }
 
 .button1:hover {
@@ -394,6 +395,7 @@ ul {
     font-size: 1.5rem;
     font-weight: 700;
     transition: 0.5s ease-in-out;
+    text-decoration: none;
 }
 
 .divButton a:hover {
@@ -550,6 +552,7 @@ input {
     font-weight: 700;
     color: #212121;
     transition: 0.3s ease-in-out;
+    text-decoration: none;
 }
 
 .buttonInscricao:hover {
@@ -562,10 +565,14 @@ input {
     background: #4ac4e2;
 }
 
+.divTituloImagens {
+    margin-top: 2rem;
+}
+
 .tituloImagens {
-    margin-top: 3rem;
     font-size: 3.3rem;
     font-weight: 700;
+    margin-bottom: 3rem;
 }
 
 .tituloImagens span {
@@ -575,6 +582,7 @@ input {
 .divImageConteudo {
     display: flex;
     align-items: center;
+    gap: 3rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 }
@@ -702,6 +710,12 @@ input {
 
 .tituloDepoimentos h2 {
     text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.tituloDepoimentos span {
+    color: coral;
 }
 
 .containerDepoimento {
