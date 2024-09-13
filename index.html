@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <section class="container">
+        <section class="container backgroundRed">
             <div class="row">
                 <div class="col-md-6">
                     <img class="img-fluid imgLogo" src="/images/logo-gestao-performance_faculdade2-branco.webp" alt="">
@@ -310,10 +310,58 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section> 
+        
+        <section class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="divTexto2">
+                        <h2>Desenvolva suas habilidades <span>e aumente seu salário</span></h2>
+                        <p>Com a crescente do mercado, grandes empresas e marcas estão em busca de talentos em Marketing. Esteja pronto para se destacar como profissional e ocupar as melhores vagas!</p>
+                    </div>
+                    <div class="divGraficos">
+                        <div class="grafico1">
+                            <div class="backgroundGrafico1">
+                                <h3 class="valorGraficos">R$ 4.800</h3>
+                            </div>
+                            <p class="cargoGrafico">Analista Junior de Marketing Digital</p>
+                        </div>
+                        <div class="grafico2">
+                            <div class="backgroundGrafico2">
+                                <h3 class="valorGraficos">R$ 8.400</h3>
+                            </div>
+                            <p class="cargoGrafico">Especialista Pleno de Marketing Digital</p>
+                        </div>
+                        <div class="grafico3">
+                            <div class="backgroundGrafico3">
+                                <h3 class="valorGraficos">R$ 14.036</h3>
+                            </div>
+                            <p class="cargoGrafico">Gerente de Marketing Digital</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+
+        <script>
+            const grafico1 = document.querySelector('.backgroundGrafico1');
+            const grafico2 = document.querySelector('.backgroundGrafico2');
+            const grafico3 = document.querySelector('.backgroundGrafico3');
+        
+            grafico1.addEventListener('mouseover', function() {
+                grafico1.classList.add('ativo');
+            });
+        
+            grafico2.addEventListener('mouseover', function() {
+                grafico2.classList.add('ativo');
+            });
+        
+            grafico3.addEventListener('mouseover', function() {
+                grafico3.classList.add('ativo');
+            });
+        </script>
     </main>
 
-    <!-- Scripts do Bootstrap e jQuery -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();

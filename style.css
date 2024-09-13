@@ -16,8 +16,10 @@ body {
     background: linear-gradient(to left, #252526, #2E2A52, #463877, #4C3370, #302537, #615082);
 }
 
-header {
-    margin-top: 3rem;
+.backgroundRed {
+    background: #212121;
+    padding: 1.2rem;
+    border-radius: 20px;
 }
 
 .imgLogo {
@@ -26,10 +28,10 @@ header {
 }
 
 .titulo, .subTitulo {
-    color: whitesmoke;
+    color: #A52A2A;
     font-family: "New Amsterdam", sans-serif;
     letter-spacing: 10px;
-    text-shadow: 15px 11px 18px rgba(0, 0, 0, 1.6);
+    text-shadow: 15px 11px 18px rgba(0, 0, 0, 0.2);
 }
 
 .titulo {
@@ -44,7 +46,7 @@ header {
 }
 
 header h3 {
-    color: whitesmoke;
+    color: #A52A2A;
     font-weight: 300;
     font-family: "Montserrat", sans-serif;
 }
@@ -88,7 +90,6 @@ header h3 {
 }
 
 main {
-    margin-top: 3rem;
     margin-bottom: 3rem;
 }
 
@@ -592,4 +593,100 @@ input {
     font-size: 1.3rem;
     font-weight: 600;
     color: #ffff47;
+}
+
+.divTexto2 {
+    margin-top: 2rem;
+    position: relative; /* Necessário para a estruturação com position: absolute */
+}
+
+.divTexto2 h2 {
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.divTexto2 span {
+    color: #FF6885;
+}
+
+.divTexto2 p {
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+.divGraficos {
+    display: flex;
+    align-items: flex-end; /* Alinhar os gráficos no final */
+    justify-content: space-between;
+    position: relative; /* Definir para controlar as posições absolutas dos gráficos */
+}
+
+.grafico1, .grafico2, .grafico3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1; 
+    margin-top: 17rem;
+}
+
+.backgroundGrafico1, .backgroundGrafico2, .backgroundGrafico3 {
+    background: linear-gradient(to left, #FFEEF6, #FFEFF3, #FFEEF6, #FFF0F1); 
+    border-radius: 30px;
+    padding: 2rem 9rem 0.5rem 9rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: end;
+    transition: all 0.5s ease-in-out; 
+    opacity: 0.1;
+    height: 0;
+    position: absolute; 
+    bottom: 3rem;
+    
+}
+
+.backgroundGrafico1 {
+    background: linear-gradient(to left, #FFEEF6, #FFEFF3, #FFEEF6, #FFF0F1); 
+}
+
+.backgroundGrafico2 {
+    background: linear-gradient(to right, #FFE3E3, #FFE0E7, #FFDEEC, #FFDEED);
+    margin-left: -2rem;
+}
+
+.backgroundGrafico3 {
+    background: linear-gradient(to left, #FFBED8, #FFBED9, #FFC0D2, #FFC6C7, #FFC6C8); 
+}
+
+.backgroundGrafico1:hover, .backgroundGrafico1.ativo {
+    height: 5rem;
+    opacity: 1;
+}
+
+.backgroundGrafico2:hover, .backgroundGrafico2.ativo {
+    height: 10rem;
+    opacity: 1;
+}
+
+.backgroundGrafico3:hover, .backgroundGrafico3.ativo {
+    height: 15rem;
+    opacity: 1;
+}
+
+.valorGraficos {
+    font-weight: 800;
+    text-wrap: nowrap;
+}
+
+.cargoGrafico {
+    color: #FBFF00;
+    font-weight: 500;
+}
+
+.grafico2 p {
+    margin-left: -2rem;
 }
