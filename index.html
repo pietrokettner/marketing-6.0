@@ -707,42 +707,35 @@
         </section>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
-    // Obtenha todos os botões
-    const buttons = document.querySelectorAll('.buttonModulos');
-    
-    // Obtenha todas as aulas
-    const aulas = document.querySelectorAll('.divAulas > div');
-    
-    // Função para esconder todas as aulas
-    function hideAllAulas() {
-        aulas.forEach(function (aula) {
-            aula.style.display = 'none';
-        });
-    }
-    
-    // Função para remover a classe 'active' de todos os botões
-    function deactivateAllButtons() {
-        buttons.forEach(function (button) {
-            button.classList.remove('active');
-        });
-    }
+                const buttons = document.querySelectorAll('.buttonModulos');
+                
+                const aulas = document.querySelectorAll('.divAulas > div');
+                
+                function hideAllAulas() {
+                    aulas.forEach(function (aula) {
+                        aula.style.display = 'none';
+                    });
+                }
+                
+                function deactivateAllButtons() {
+                    buttons.forEach(function (button) {
+                        button.classList.remove('active');
+                    });
+                }
 
-    // Função para ativar o clique no botão e mostrar a aula correspondente
-    buttons.forEach(function (button, index) {
-        button.addEventListener('click', function () {
-            hideAllAulas();  // Esconde todas as aulas
-            aulas[index].style.display = 'block';  // Mostra apenas a aula correspondente
-            deactivateAllButtons();  // Desativa todos os botões
-            button.classList.add('active');  // Ativa o botão clicado
-        });
-    });
+                buttons.forEach(function (button, index) {
+                    button.addEventListener('click', function () {
+                        hideAllAulas(); 
+                        aulas[index].style.display = 'block';  
+                        deactivateAllButtons();  
+                        button.classList.add('active'); 
+                    });
+                });
 
-    // Definir a aula1 e o button1 como ativos quando a página carregar
-    hideAllAulas();
-    aulas[0].style.display = 'block';  // Exibe a primeira aula
-    buttons[0].classList.add('active');  // Marca o primeiro botão como ativo
-});
-
+                hideAllAulas();
+                aulas[0].style.display = 'block';  
+                buttons[0].classList.add('active');  
+            });
         </script>
         
     </main>
