@@ -849,3 +849,81 @@ input {
     color: #212121;
 }
 
+.backgroundGreen {
+    background: #E6F5E1;
+}
+
+.tituloPrograma {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.divModulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonModulos {
+    padding: 2rem 1rem;
+    background: transparent;
+    border: 2px solid salmon;
+    width: 100%;
+    font-weight: 700;
+    color: salmon;
+    font-size: 1.1rem;
+}
+
+.buttonModulos:active {
+    background: salmon;
+    color: whitesmoke;
+}
+
+#button1 {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#button5 {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.divAulas {
+    margin-bottom: 3rem;
+}
+
+.divMateria {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;  
+    border-bottom: 1px solid #212121;
+    padding: 1rem 0; 
+}
+
+.divMateria p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #2F4F4F ;
+}
+
+.divAulas > div {
+    display: none; 
+}
+
+.divAulas .aula1 {
+    display: block; 
+}
+
+.buttonModulos.active {
+    background-color: #FF756B; 
+    color: white; 
+}
+
+
+
+
