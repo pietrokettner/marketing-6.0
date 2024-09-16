@@ -625,9 +625,9 @@ input {
 
 .divGraficos {
     display: flex;
-    align-items: flex-end; /* Alinhar os gráficos no final */
+    align-items: flex-end; 
     justify-content: space-between;
-    position: relative; /* Definir para controlar as posições absolutas dos gráficos */
+    position: relative;
 }
 
 .grafico1, .grafico2, .grafico3 {
@@ -645,7 +645,7 @@ input {
 .backgroundGrafico1, .backgroundGrafico2, .backgroundGrafico3 {
     background: linear-gradient(to left, #FFEEF6, #FFEFF3, #FFEEF6, #FFF0F1); 
     border-radius: 30px;
-    padding: 2rem 9rem 0.5rem 9rem;
+    padding: 2rem 6rem 0.5rem 6rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: end;
@@ -688,6 +688,7 @@ input {
 .valorGraficos {
     font-weight: 800;
     text-wrap: nowrap;
+    font-size: 3rem;
 }
 
 .cargoGrafico {
