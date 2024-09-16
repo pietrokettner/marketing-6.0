@@ -787,6 +787,12 @@ input {
     background: #F6F5FA;
 }
 
+.tituloPerguntas {
+    font-size: 3rem;
+    margin-top: 3rem;
+    font-weight: 700;
+}
+
 .containerPerguntas {
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -808,13 +814,17 @@ input {
 }
 
 .divPlus p {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 0.6rem;
 }
 
 .imgPlus {
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+.imgPlus.rotate {
+    transform: rotate(45deg);
 }
 
 .divPlus:hover .imgPlus {
@@ -822,8 +832,20 @@ input {
     border-radius: 100px;
 }
 
-
 .divOculta {
-    display: none;
+    max-height: 0; 
+    overflow: hidden;
+    transition: max-height 0.5s ease-out; 
+}
+
+.divOculta.show {
+    max-height: 1000px;
+}
+
+.divOculta p {
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #212121;
 }
 

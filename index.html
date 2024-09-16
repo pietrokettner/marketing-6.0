@@ -454,7 +454,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12"> 
-                        <h2>Perguntas frequentes</h2>
+                        <h2 class="tituloPerguntas">Perguntas frequentes</h2>
                         <div class="containerPerguntas">
                             <button class="buttonPerguntas">
                                 <div class="divPlus">
@@ -470,6 +470,25 @@
                 </div>
             </div>
         </section>
+
+        <script>
+            document.querySelectorAll('.buttonPerguntas').forEach(button => {
+                button.addEventListener('click', function() {
+                    const divOculta = this.querySelector('.divOculta');
+                    const imgPlus = this.querySelector('.imgPlus');
+
+                    if (divOculta.classList.contains('show')) {
+                        divOculta.style.maxHeight = null;
+                        imgPlus.classList.remove('rotate');
+                        divOculta.classList.remove('show');
+                    } else {
+                        divOculta.classList.add('show');
+                        divOculta.style.maxHeight = divOculta.scrollHeight + "px"; 
+                        imgPlus.classList.add('rotate');
+                    }
+                });
+            });
+        </script>
     </main>
 
 
