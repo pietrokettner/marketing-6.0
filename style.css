@@ -611,7 +611,7 @@ input {
 
 .divTexto2 {
     margin-top: 2rem;
-    position: relative; /* Necessário para a estruturação com position: absolute */
+    position: relative; 
 }
 
 .divTexto2 h2 {
@@ -782,3 +782,48 @@ input {
     font-weight: 400;
     color: #212121;
 }
+
+.backgroundGray {
+    background: #F6F5FA;
+}
+
+.containerPerguntas {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.buttonPerguntas {
+    width: 100%;
+    background: none;
+    border: none;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    padding: 1rem 0;
+}
+
+.divPlus {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.divPlus p {
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.imgPlus {
+    transition: 0.3s ease-in-out;
+}
+
+.divPlus:hover .imgPlus {
+    background-color: #FF756B;
+    border-radius: 100px;
+}
+
+
+.divOculta {
+    display: none;
+}
+
