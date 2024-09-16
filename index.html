@@ -376,9 +376,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
-                                    data-title="Paula Cristina: de advogada para social media manager" 
-                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                <button class="buttonModal" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#depoimentoModal" 
+                                    data-title="Juraci Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Juraci Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
                                     Leia a história
                                 </button>
                             </div>
@@ -393,9 +395,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
-                                    data-title="Paula Cristina: de advogada para social media manager" 
-                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                <button class="buttonModal" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#depoimentoModal" 
+                                    data-title="Judite Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Judite Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
                                     Leia a história
                                 </button>
                             </div>
@@ -410,9 +414,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
-                                    data-title="Paula Cristina: de advogada para social media manager" 
-                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                <button class="buttonModal"
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#depoimentoModal" 
+                                    data-title="Maria Cristina: de advogada para social media manager" 
+                                    data-content="Em transição de carreira, Maria Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
                                     Leia a história
                                 </button>
                             </div>
@@ -427,9 +433,11 @@
                             <div class="divDepoimento">
                                 <h3>Paula Cristina: de advogada para social media manager</h3>
                                 <p>Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área</p>
-                                <button data-toggle="modal" data-target="#exampleModalCenter" class="buttonModal" 
+                                <button class="buttonModal" 
+                                    data-bs-toggle="modal" 
+                                    data-bs-target="#depoimentoModal"
                                     data-title="Paula Cristina: de advogada para social media manager" 
-                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área">
+                                    data-content="Em transição de carreira, Paula Cristina já está colocando os conhecimentos do curso de social manager em prática e já se imagina trabalhando na área Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum ea iure non inventore reprehenderit ut ratione quidem, sequi minus eaque. Dicta, at fugiat? Enim alias corrupti id maxime aspernatur quod.">
                                     Leia a história
                                 </button>
                             </div>
@@ -441,44 +449,42 @@
                 </div>
             </div>
         </section>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                    <h5 class="modal-title" id="modalTitle">Título do Depoimento</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    </div>
-                    <div class="modal-body" id="modalBody">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate earum veniam illo, repellendus voluptate et atque impedit voluptatem deserunt placeat odio dolores. Inventore, ipsam optio? Culpa impedit sequi qui?</p>
-                    </div>
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                var buttons = document.querySelectorAll('.buttonModal');
-                var modalTitle = document.getElementById('modalTitle');
-                var modalBody = document.getElementById('modalBody');
-        
-                buttons.forEach(function(button) {
-                    button.addEventListener('click', function() {
-                        var title = button.getAttribute('data-title');
-                        var content = button.getAttribute('data-content');
-        
-                        modalTitle.textContent = title;
-                        modalBody.textContent = content;
-                    });
-                });
-            });
-        </script>
     </main>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="depoimentoModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="modalTitle">Título do depoimento</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <p id="modalContent">Conteúdo do depoimento</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('depoimentoModal');
+            var modalTitle = document.getElementById('modalTitle');
+            var modalContent = document.getElementById('modalContent');
+    
+            document.querySelectorAll('.buttonModal').forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var title = this.getAttribute('data-title');
+                    var content = this.getAttribute('data-content');
+                    modalTitle.textContent = title;
+                    modalContent.textContent = content;
+                });
+            });
+        });
+    </script>
+    
+  
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>AOS.init();</script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
