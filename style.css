@@ -930,17 +930,53 @@ input {
     margin-top: -3rem;
 }
 
-.containerFooter1, .containerFooter2, .containerFooter3, .containerFooter4, .containerFooter5 {
+.borderBottom {
+    border-bottom: 1px solid #00FF9D;
+}
+
+.containerFooter1, .containerFooter2, .containerFooter3, .containerFooter4 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 3rem !important;
 }
 
-.containerFooter1 {
-    margin-top: 3rem;
+.containerFooter4 {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 3rem;
 }
 
+.subDivFooter, .subDivFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tituloFooter, .tituloFooter2 {
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.tituloFooter2 {
+    margin-left: -4rem;
+}
+
+.ulFooter a {
+    text-decoration: none;
+    color: #615082;
+}
+
+.ulFooter a:hover, .subDivFooter a:hover {
+    color: #5F27BC;
+}
+
+.subDivFooter a {
+    text-decoration: none;
+    font-family: "New Amsterdam", sans-serif;
+    font-size: 1.5rem;
+}
 
 
 
