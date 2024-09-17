@@ -978,5 +978,27 @@ input {
     font-size: 1.5rem;
 }
 
+.divFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.divContato {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.divRedes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
 
 
