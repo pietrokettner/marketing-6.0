@@ -925,6 +925,22 @@ input {
     color: white; 
 }
 
+.backgroundPurple {
+    background: #22053D;
+    margin-top: -3rem;
+}
+
+.containerFooter1, .containerFooter2, .containerFooter3, .containerFooter4, .containerFooter5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.containerFooter1 {
+    margin-top: 3rem;
+}
+
 
 
 
