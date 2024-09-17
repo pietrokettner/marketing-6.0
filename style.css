@@ -1028,4 +1028,104 @@ input {
 }
 
 
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 3rem;
+    }
+
+    .subTitulo {
+        font-size: 5rem;
+    }
+
+    .buttonDiv {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .divTexto h2 {
+        font-size: 6rem;
+    }
+
+    .videoDiv {
+        width: auto;
+    }
+
+    .divMarcas {
+        margin-left: auto;
+    }
+
+    .containerGeralIndicado {   
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .graduacaoTitulo {
+        font-size: 2.5rem;
+    }
+
+    .divPromo {
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    .jornadaTitulo {
+        font-size: 3rem;
+        margin-top: auto;
+    }
+
+    .tituloFormulario {
+        font-size: 4rem;
+        margin-bottom: auto;
+    }
+
+    .divImageConteudo {
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .divGraficos {
+        display: none;
+    }
+
+    .containerDepoimento {
+        flex-direction: column;
+    }
+
+    .imgDepoimento img {
+        width: auto;
+    }
+
+    .tituloPerguntas {
+        font-size: 2.2rem;
+        margin-top: auto;
+    }
+
+    .divPlus p {
+        font-size: 1rem;
+        text-align: left;
+    } 
+
+    .divOculta p {
+        font-size: 1rem;
+    }
+
+    .divModulos {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    .divFooter {
+        flex-direction: column;
+    }
+
+    .divContato {
+        gap: 1rem;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+}
+
 
