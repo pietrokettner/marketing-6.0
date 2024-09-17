@@ -1000,5 +1000,32 @@ input {
     gap: 3rem;
 }
 
+.subDivContato p {
+    color: #AB9FB5;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.subDivContato a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+}
+
+.subDivContato a:hover {
+    color: #AB9FB5;
+}
+
+.divRedes a img {
+    transition: filter 0.3s ease;
+}
+
+.divRedes a img:hover {
+    filter: invert(35%) sepia(65%) saturate(500%) hue-rotate(240deg) brightness(90%) contrast(85%);
+}
+
 
 
